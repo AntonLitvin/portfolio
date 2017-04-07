@@ -92,6 +92,7 @@ $('.to-top-btn').on('click', function() {
 	$('body, html').animate({ scrollTop:0 },800);
 	if ($('.hidden-menu').is(':visible')) {
 		$('.hidden-menu').fadeOut();
+		$('.sandwich').removeClass('active');
 	}
 	return false;
 });
