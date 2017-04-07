@@ -1,0 +1,85 @@
+$color: #30ADFC;
+$text-color: #888;
+$main-color: #222;
+$bg-light: #f7f7f7;
+
+
+a {
+	color: $color;
+}
+
+p {
+	color: $text-color;
+}
+
+/*----------------------*/
+
+.language-button .active {
+	color: $color;
+	border-color: $color;
+	opacity: 0.8;
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.hidden-menu li a:hover {
+	color: $color;
+}
+
+.about-me-left li {
+	color: $text-color;
+}
+
+.phone-number {
+	color: $color;
+}
+
+.resume,
+.contacts-section {
+	background-color: $bg-light;
+}
+
+.resume .period {
+	background-color: $color;
+}
+
+.portfolio {
+	background-color: $main-color;
+}
+
+.portfolio-nav a {
+	color: $text-color;
+}
+
+.portfolio-nav .active {
+	border-bottom: 1px solid $color;
+	color: #fff;
+}
+
+.portfolio-item-descr a {
+	border: 1px solid $color;
+}
+
+.contacts span {
+	color: $color;
+}
+
+.form-button button {
+	background-color: $color;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+	box-shadow: 0 0 6px $color;
+}
+
+.page-footer {
+	background-color: $main-color;
+}
+
+.to-top-btn {
+	span {
+		color: $color;
+	}
+}

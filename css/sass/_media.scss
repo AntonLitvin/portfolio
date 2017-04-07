@@ -1,0 +1,188 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+	.about-me-right {
+		text-align: center;
+		.personal-info {
+			display: inline-block;
+			text-align: left;
+		}
+	}
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+
+	.parallax-mirror{
+		display: none;
+	}
+
+	.main-header {
+		.logo img {
+			width: 200px;
+			margin-top: 4px;
+		}
+	}
+
+	.language-button {
+		margin-right: 150px;
+		margin-top: 10px;
+		a {
+			padding: 3px 7px;
+			color: #fff;
+			font-size: 14px;
+		}
+	}
+
+	.header-name {
+		transform: translate(-50%, -50%);
+		width: 370px;
+	}
+
+	.about-me {
+		text-align: center;
+	}
+
+	.about-me-left {
+		h3 {
+			text-align: center;
+		}
+	}
+
+	.skills {
+		text-align: center;
+		ul {
+			display: inline-block;
+			text-align: left;
+		}
+	}
+
+	.personal-info {
+		h3, h4 {
+			text-align: center;
+		}
+		p {
+			display: inline-block;
+			width: 48%;
+			text-align: center;
+		}
+		.social {
+			text-align: center;
+		}
+	}
+
+	.resume-work,
+	.resume-study {
+		text-align: center;
+		h2 {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+
+	.resume {
+		.resume-work-icon,
+		.resume-study-icon {
+			padding-right: 0;
+			padding-left: 0;
+		}
+	}
+
+	.contacts {
+		padding-left:20%;
+	}
+
+	.contact-form {
+		padding-left: 20%;
+		padding-right: 20%;
+		.form-button {
+			text-align: center;
+		}
+	}
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+	.main-header {
+		.logo img{
+			width: 150px;
+			margin-top: 10px;
+		}
+	}
+
+	.language-button {
+		float: left;
+		margin-left: 10px;
+	}
+
+	.header-name {
+		width: 280px;
+		h1 {
+			font-size: 20px;
+		}
+	}
+
+	.menu-btn p {
+		color: transparent;
+	}
+
+	.personal-info {
+		p {
+			display:block;
+			width: 100%;
+			margin-right: 0;
+		}
+	}
+
+	.portfolio-nav a {
+		letter-spacing: 2px;
+	}
+
+	.contacts, 
+	.contact-form {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+
+	.page-footer {
+		text-align: center;
+		.social {
+			float: none;
+			margin-right: 0;
+		}
+		p {
+			float: none;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+

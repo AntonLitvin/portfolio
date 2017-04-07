@@ -1,0 +1,76 @@
+a {
+  color: #30adfc;
+}
+
+p {
+  color: #888888;
+}
+
+/*----------------------*/
+.language-button .active {
+  color: #30adfc;
+  border-color: #30adfc;
+  opacity: 0.8;
+}
+.language-button .active:hover {
+  opacity: 1;
+}
+
+.hidden-menu li a:hover {
+  color: #30adfc;
+}
+
+.about-me-left li {
+  color: #888888;
+}
+
+.phone-number {
+  color: #30adfc;
+}
+
+.resume,
+.contacts-section {
+  background-color: #f7f7f7;
+}
+
+.resume .period {
+  background-color: #30adfc;
+}
+
+.portfolio {
+  background-color: #222222;
+}
+
+.portfolio-nav a {
+  color: #888888;
+}
+
+.portfolio-nav .active {
+  border-bottom: 1px solid #30adfc;
+  color: #fff;
+}
+
+.portfolio-item-descr a {
+  border: 1px solid #30adfc;
+}
+
+.contacts span {
+  color: #30adfc;
+}
+
+.form-button button {
+  background-color: #30adfc;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 6px #30adfc;
+}
+
+.page-footer {
+  background-color: #222222;
+}
+
+.to-top-btn span {
+  color: #30adfc;
+}

@@ -1,0 +1,806 @@
+* {
+  box-sizing: border-box;
+}
+
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #666;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #666;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.5;
+  overflow-x: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/*===== Preloader =====*/
+.loader {
+  background: none repeat scroll 0 0 #ffffff;
+  bottom: 0;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+}
+
+.loader-inner {
+  background-image: url("../img/loading.gif");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #fff;
+  height: 60px;
+  width: 60px;
+  margin-top: -30px;
+  margin-left: -30px;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+}
+
+/*===== Header =====*/
+.main-header {
+  position: relative;
+  padding-top: 30px;
+  background: black url(../img/bg-2.jpg) no-repeat left top;
+  background-size: cover;
+  min-height: 480px;
+}
+.main-header .logo {
+  color: #fff;
+  float: left;
+  position: relative;
+  z-index: 2;
+}
+
+.language-button {
+  float: right;
+  margin-right: 160px;
+  position: relative;
+  margin-top: 6px;
+  z-index: 3;
+}
+.language-button a {
+  display: inline-block;
+  padding: 5px 10px;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 3px;
+  font-size: 16px;
+  opacity: 0.7;
+  transition: all 0.25s;
+}
+.language-button a:hover {
+  opacity: 0.9;
+}
+
+/*===== Main menu styles =====*/
+.menu-btn {
+  color: #fff;
+  position: fixed;
+  top: 30px;
+  right: 4%;
+  z-index: 100;
+}
+.menu-btn p {
+  margin: 0;
+  display: inline-block;
+  vertical-align: middle;
+  color: #ccc;
+  margin-right: 15px;
+  text-transform: uppercase;
+  font-size: 20px;
+}
+.menu-btn .menu-toggle {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: rgba(0, 0, 0, 0.6);
+  position: relative;
+}
+.menu-btn .menu-toggle:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hidden-menu {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.85);
+  z-index: 10;
+  display: none;
+}
+.hidden-menu ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 100px;
+}
+.hidden-menu ul a {
+  display: block;
+  color: #fff;
+  padding: 15px 0;
+  text-transform: uppercase;
+  font-size: 16px;
+  letter-spacing: 2px;
+  transition: all 0.3s;
+}
+.hidden-menu ul a:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.sandwich {
+  width: 34px;
+  height: 34px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: block;
+  z-index: 100;
+}
+.sandwich span {
+  position: relative;
+  width: 34px;
+  height: 4px;
+  background: #fff;
+  border: none;
+  border-radius: 4px;
+  display: block;
+}
+.sandwich .sw-topper {
+  top: 4px;
+  transition: transform 0.5s, top 0.2s;
+}
+.sandwich .sw-bottom {
+  top: 12px;
+  transition: transform 0.5s, top 0.2s;
+  transition-delay: 0.2s, 0s;
+}
+.sandwich .sw-footer {
+  top: 20px;
+  background: #fff;
+  transition: all 0.5s;
+  transition-delay: 0.1s;
+}
+.sandwich.active .sw-topper {
+  top: 16px;
+  transform: rotate(140deg);
+}
+.sandwich.active .sw-bottom {
+  transform: rotate(-140deg);
+}
+.sandwich.active .sw-footer {
+  opacity: 0;
+  top: 0;
+  transform: rotate(180deg);
+}
+
+/*===== Header name =====*/
+.header-name {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  text-align: center;
+  color: #fff;
+  opacity: 0.8;
+}
+.header-name .subject-name {
+  display: inline-block;
+  border: 10px solid #fff;
+  border-radius: 15px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  animation-delay: 0.5s;
+}
+.header-name h1 {
+  text-transform: uppercase;
+}
+.header-name p {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  animation-delay: 0.5s;
+}
+
+/*===== About me section =====*/
+.section-header {
+  text-align: center;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.section-header h2 {
+  font-size: 24px;
+}
+.section-header p {
+  font-size: 12px;
+  color: #222;
+  letter-spacing: 3px;
+}
+.section-header::after {
+  content: "";
+  width: 100px;
+  height: 2px;
+  background-color: #222;
+  position: absolute;
+  bottom: 0px;
+  left: 50%;
+  margin-left: -50px;
+}
+
+.about-me h3 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #888;
+  font-size: 14px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+.about-me .my-photo-wrapper h3 {
+  text-align: center;
+}
+.about-me h4 {
+  text-transform: uppercase;
+}
+.about-me h5 {
+  font-size: 16px;
+  margin: 0;
+  margin-bottom: 5px;
+}
+.about-me .social {
+  margin-top: 30px;
+}
+.about-me .social a {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 16px;
+}
+.about-me .social a:hover {
+  opacity: 0.8;
+}
+.about-me .social a:last-child {
+  margin-right: 0;
+}
+.about-me ul {
+  margin: 0;
+  list-style-type: circle;
+}
+
+.djinni-icon {
+  margin-right: 0;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: -5px;
+  height: 38px;
+  width: 40px;
+}
+
+.djinni-icon-tomato {
+  background: url(../img/djinni-icon-tomato.png) no-repeat 0px -1px;
+  background-size: 40px 38px;
+}
+
+.djinni-icon-blue {
+  background: url(../img/djinni-icon-blue.png) no-repeat 0px -1px;
+  background-size: 40px 38px;
+}
+
+.my-photo a {
+  outline: none;
+}
+.my-photo img {
+  display: block;
+  margin: auto;
+  width: 75%;
+  border: 5px solid #888;
+  border-radius: 15px;
+}
+
+.about-me-item {
+  padding-bottom: 20px;
+}
+.about-me-item p > a:hover {
+  text-decoration: underline;
+}
+
+.about-me-left {
+  text-align: left;
+}
+.about-me-left ul {
+  padding-left: 25px;
+}
+
+.about-me-right {
+  padding-bottom: 0;
+}
+
+/*===== Resume section =====*/
+.resume .period {
+  display: inline-block;
+  padding: 7px 15px;
+  border-radius: 3px;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.resume-work {
+  border-right: 1px solid #d2d2d2;
+  text-align: right;
+}
+.resume-work h2 {
+  padding-right: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.resume-work .work-item {
+  min-height: 230px;
+  padding: 15px 20px 0;
+}
+.resume-work .work-item span {
+  color: #888;
+  font-style: italic;
+}
+.resume-work .resume-work-icon {
+  margin-bottom: 5px;
+  padding-right: 20px;
+}
+.resume-work .resume-work-icon span {
+  color: #222;
+}
+
+.resume-study h2 {
+  padding-left: 20px;
+  margin-top: 15px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.resume-study .study-item {
+  min-height: 230px;
+  padding: 15px 20px 0;
+}
+.resume-study .study-item span {
+  color: #888;
+  font-style: italic;
+}
+.resume-study .resume-study-icon {
+  margin-bottom: 5px;
+  padding-left: 20px;
+}
+.resume-study .resume-study-icon span {
+  color: #222;
+}
+
+/*===== Portfolio section =====*/
+.section-header-dark h2, .section-header-dark p {
+  color: #fff;
+}
+.section-header-dark::after {
+  background-color: #fff;
+}
+
+.portfolio {
+  color: #fff;
+  padding-bottom: 50px;
+}
+
+.portfolio-nav {
+  text-align: center;
+  margin-bottom: 30px;
+}
+.portfolio-nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.portfolio-nav li {
+  display: inline-block;
+}
+.portfolio-nav a {
+  display: block;
+  padding: 8px 0px;
+  margin-right: 25px;
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  border-bottom: 1px solid transparent;
+  font-size: 12px;
+  letter-spacing: 3px;
+  transition: all 0.3s;
+}
+.portfolio-nav a:hover {
+  color: #fff;
+}
+.portfolio-nav li:last-child a {
+  margin-right: 0;
+}
+
+.portfolio-wrap > div {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.portfolio-item {
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  overflow: hidden;
+  display: none;
+  /*for mixit up*/
+}
+.portfolio-item:hover .portfolio-item-descr {
+  opacity: 1;
+  height: 100%;
+}
+
+.portfolio-item-descr {
+  position: absolute;
+  width: 100%;
+  height: 0%;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+  padding-top: 30px;
+  padding-left: 15px;
+  padding-right: 15px;
+  background-color: rgba(0, 0, 0, 0.85);
+  opacity: 0;
+  transition: all 0.6s;
+}
+.portfolio-item-descr h4 {
+  font-weight: normal;
+  text-transform: uppercase;
+  margin-bottom: 0px;
+}
+.portfolio-item-descr p {
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.portfolio-item-descr a {
+  display: inline-block;
+  padding: 5px 10px;
+  border-radius: 2px;
+  margin-top: 10px;
+  transition: all 0.25s;
+}
+.portfolio-item-descr a:hover {
+  color: #fff;
+  border-color: #fff;
+}
+
+/*===== Contacts section =====*/
+.contacts-section {
+  padding-bottom: 0;
+}
+
+.contacts {
+  padding-bottom: 30px;
+}
+.contacts h3 {
+  margin: 0;
+}
+.contacts p {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.contacts a:hover {
+  text-decoration: underline;
+}
+.contacts > div {
+  padding: 25px 0;
+}
+
+.contacts-icon {
+  display: inline-block;
+  vertical-align: top;
+  width: 60px;
+  text-align: center;
+  margin-right: 15px;
+}
+
+.contacts-text {
+  display: inline-block;
+  vertical-align: top;
+}
+.contacts-text h3 {
+  margin-top: 6px;
+}
+
+.contact-form {
+  padding-bottom: 30px;
+}
+.contact-form p {
+  margin-top: 25px;
+  margin-bottom: 5px;
+  margin-left: 5px;
+}
+.contact-form input, .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #888;
+  outline: none;
+}
+.contact-form .form-button {
+  text-align: right;
+}
+.contact-form button {
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-top: 20px;
+}
+.contact-form button:hover {
+  opacity: 0.8;
+}
+
+/*===== Footer =====*/
+.page-footer {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.page-footer .social {
+  float: right;
+  margin-right: 50px;
+}
+.page-footer .social a {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 15px;
+}
+.page-footer .social a:hover {
+  opacity: 0.8;
+}
+.page-footer .social a:first-child {
+  margin-left: 0;
+}
+.page-footer p {
+  margin: 0;
+  margin-top: 8px;
+  float: left;
+}
+
+.to-top-btn {
+  z-index: 1000;
+  position: fixed;
+  opacity: 0.4;
+  right: 10px;
+  bottom: 10px;
+}
+.to-top-btn:hover {
+  opacity: 1;
+}
+.to-top-btn button {
+  background-color: transparent;
+}
+
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px) {
+  .about-me-right {
+    text-align: center;
+  }
+  .about-me-right .personal-info {
+    display: inline-block;
+    text-align: left;
+  }
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /*Disable Animation on Mobile Devices*/
+  .animated {
+    /*CSS transitions*/
+    -o-transition-property: none !important;
+    -moz-transition-property: none !important;
+    -ms-transition-property: none !important;
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -o-transform: none !important;
+    -moz-transform: none !important;
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    -moz-animation: none !important;
+    -o-animation: none !important;
+    -ms-animation: none !important;
+    animation: none !important;
+  }
+
+  .parallax-mirror {
+    display: none;
+  }
+
+  .main-header .logo img {
+    width: 200px;
+    margin-top: 4px;
+  }
+
+  .language-button {
+    margin-right: 150px;
+    margin-top: 10px;
+  }
+  .language-button a {
+    padding: 3px 7px;
+    color: #fff;
+    font-size: 14px;
+  }
+
+  .header-name {
+    transform: translate(-50%, -50%);
+    width: 370px;
+  }
+
+  .about-me {
+    text-align: center;
+  }
+
+  .about-me-left h3 {
+    text-align: center;
+  }
+
+  .skills {
+    text-align: center;
+  }
+  .skills ul {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .personal-info h3, .personal-info h4 {
+    text-align: center;
+  }
+  .personal-info p {
+    display: inline-block;
+    width: 48%;
+    text-align: center;
+  }
+  .personal-info .social {
+    text-align: center;
+  }
+
+  .resume-work,
+  .resume-study {
+    text-align: center;
+  }
+  .resume-work h2,
+  .resume-study h2 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .resume .resume-work-icon,
+  .resume .resume-study-icon {
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .contacts {
+    padding-left: 20%;
+  }
+
+  .contact-form {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  .contact-form .form-button {
+    text-align: center;
+  }
+}
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 480px) {
+  .main-header .logo img {
+    width: 150px;
+    margin-top: 10px;
+  }
+
+  .language-button {
+    float: left;
+    margin-left: 10px;
+  }
+
+  .header-name {
+    width: 280px;
+  }
+  .header-name h1 {
+    font-size: 20px;
+  }
+
+  .menu-btn p {
+    color: transparent;
+  }
+
+  .personal-info p {
+    display: block;
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .portfolio-nav a {
+    letter-spacing: 2px;
+  }
+
+  .contacts,
+  .contact-form {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .page-footer {
+    text-align: center;
+  }
+  .page-footer .social {
+    float: none;
+    margin-right: 0;
+  }
+  .page-footer p {
+    float: none;
+    margin-bottom: 20px;
+  }
+}

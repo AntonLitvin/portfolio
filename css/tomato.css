@@ -1,0 +1,76 @@
+a {
+  color: tomato;
+}
+
+p {
+  color: #888888;
+}
+
+/*----------------------*/
+.language-button .active {
+  color: tomato;
+  border-color: tomato;
+  opacity: 0.8;
+}
+.language-button .active:hover {
+  opacity: 1;
+}
+
+.hidden-menu li a:hover {
+  color: tomato;
+}
+
+.about-me-left li {
+  color: #888888;
+}
+
+.phone-number {
+  color: tomato;
+}
+
+.resume,
+.contacts-section {
+  background-color: #f7f7f7;
+}
+
+.resume .period {
+  background-color: tomato;
+}
+
+.portfolio {
+  background-color: #222222;
+}
+
+.portfolio-nav a {
+  color: #888888;
+}
+
+.portfolio-nav .active {
+  border-bottom: 1px solid tomato;
+  color: #fff;
+}
+
+.portfolio-item-descr a {
+  border: 1px solid tomato;
+}
+
+.contacts span {
+  color: tomato;
+}
+
+.form-button button {
+  background-color: tomato;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  box-shadow: 0 0 6px tomato;
+}
+
+.page-footer {
+  background-color: #222222;
+}
+
+.to-top-btn span {
+  color: tomato;
+}
