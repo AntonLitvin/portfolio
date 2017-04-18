@@ -2,16 +2,16 @@ $(window).load(function() {
 	$('.loader-inner').fadeOut(); 
 	$('.loader').delay(400).fadeOut('slow'); 
 
-	$('.hidden-menu a').animated('fadeInUp', 'fadeInUp');
-	$('.subject-name').animated('fadeInDown', 'fadeOut');
-	$('.header-name p').animated('fadeInUp', 'fadeOut');
-	$('.section-header').animated('fadeInUp', 'fadeOut');
-	$('.services-item:nth-child(3),.services-item:nth-child(4)').animated('fadeInRight', 'fadeOut');
-	$('.my-photo-wrapper').animated('flipInY', 'fadeOut');
-	$('.about-me-left').animated('fadeInLeft', 'fadeOut');
-	$('.about-me-right').animated('fadeInRight', 'fadeOut');
-	$('.work-item').animated('fadeInLeft', 'fadeOut');
-	$('.study-item').animated('fadeInRight', 'fadeOut');
+	$('.hidden-menu a').animated('fadeInUp');
+	$('.subject-name').animated('fadeInDown');
+	$('.header-name p').animated('fadeInUp');
+	$('.section-header').animated('fadeInUp');
+	$('.services-item:nth-child(3),.services-item:nth-child(4)').animated('fadeInRight');
+	$('.my-photo-wrapper').animated('flipInY');
+	$('.about-me-left').animated('fadeInLeft');
+	$('.about-me-right').animated('fadeInRight');
+	$('.work-item').animated('fadeInLeft');
+	$('.study-item').animated('fadeInRight');
 });
 
 
