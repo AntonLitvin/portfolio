@@ -329,8 +329,9 @@ section {
 			display: inline-block;
 			vertical-align: middle;
 			margin-right: 16px;
+			transition-duration: 0.1s;
 			&:hover {
-				opacity: 0.8;
+				transform: scale(1.1);
 			}
 			&:last-child {
 				margin-right: 0;

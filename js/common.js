@@ -52,14 +52,6 @@ $(window).resize(function() {
 ===============================*/
 $('.menu-toggle').on('click', function() {
 	$('.sandwich').toggleClass('active');
-})
-
-$('.hidden-menu a').on('click', function() {
-	$('.hidden-menu').fadeOut();
-	$('.sandwich').removeClass('active');
-})
-
-$('.menu-toggle').on('click', function() {
 	$('.hidden-menu').fadeToggle();
 	$('.top-menu a').toggleClass('fadeInUp animated');
 })
@@ -74,6 +66,8 @@ $('.hidden-menu a').on('click', function () {
 	var destination = $(elementClick).offset().top;
 
 	$('html, body').animate({ scrollTop: destination + 5 }, 800);
+	$('.sandwich').removeClass('active');
+	$('.hidden-menu').fadeOut();
 	return false; 
 });
 

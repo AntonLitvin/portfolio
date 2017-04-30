@@ -315,9 +315,10 @@ section {
   display: inline-block;
   vertical-align: middle;
   margin-right: 16px;
+  transition-duration: 0.1s;
 }
 .about-me .social a:hover {
-  opacity: 0.8;
+  transform: scale(1.1);
 }
 .about-me .social a:last-child {
   margin-right: 0;
