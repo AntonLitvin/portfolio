@@ -65,7 +65,7 @@ section {
 
 
 .loader {
-	background: none repeat scroll 0 0 #ffffff;
+	background: none repeat scroll 0 0 #000;
 	bottom: 0;
 	height: 100%;
 	left: 0;
@@ -79,7 +79,7 @@ section {
 	background-image: url("../img/loading.gif");
 	background-repeat: no-repeat;
 	background-position: center center;
-	background-color: #fff;
+	background-color: #000;
 	height: 60px;
 	width: 60px;
 	margin-top: -30px;
