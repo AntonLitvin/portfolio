@@ -1,6 +1,8 @@
 # portfolio
 
-Two languages and two color skin landing page
+[DEMO](https://antonlitvin.github.io/portfolio/)
+
+Two languages and two color skin landing page (my own CV-portfolio)
 
 To create it I used:
 
@@ -12,6 +14,4 @@ MixItUp plugin for sorting portfolio items<br>
 Waypoints and animate for animation<br>
 Some jQuery<br>
 
-Portfolio section contains links to my other works
-
-Demo: https://antonlitvin.github.io/portfolio/
+Portfolio section contains links to some of my other works
