@@ -506,11 +506,13 @@ section {
 }
 
 .portfolio-wrap > div {
-	padding-right: 0;
-	padding-left: 0;
+	padding-right: 5px;
+	padding-left: 5px;
 }
 
 .portfolio-item {
+	padding-top: 5px;
+	padding-bottom: 5px;
 	position: relative;
 	text-align: center;
 	cursor: pointer;
