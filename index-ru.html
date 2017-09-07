@@ -95,18 +95,22 @@
 				<div class="about-me-item about-me-left">
 					<h3>Немного о себе</h3>
 					<p>Привет, меня зовут Антон, я начинающий Front-end разработчик.</p>
-					<p>После того как я понял, что это мое призвание, я ежедневно развиваюсь в этом направлении. И получаю от этого удовольствие.</p>
+					<p>Я ежедневно развиваюсь в этом направлении и получаю от этого удовольствие.</p>
 					<p>В такой непростой задаче как грамотная верстка мне помогают такие качества как скрупулезность, ответственность, внимание к деталям и умение находить решения задач.</p>
 
 					<div class="skills">
 						<h5>Профессиональные навыки:</h5>
 						<ul>
-							<li>Отличные знания HTML, CSS (Sass)</li>
+							<li>Отличные знания HTML5, CSS3</li>
 							<li>Базовые знания JavaScript (native, jQuery)</li>
+							<li>Адаптивная верстка (Media queries, сетка bootstrap)</li>
+							<li>SCSS препроцессор</li>
+							<li>Gulp для автоматизации</li>
+							<li>GIT (система контроля версий)</li>
 							<li>Bootstrap</li>
+							<li>Базовые знания Wordpress</li>
 							<li>Photoshop для верстки</li>
-							<li>Аккуратный валидный код</li>
-							<li>Адаптивность</li>
+							<li>Аккуратный валидный код (W3C, Bootlint)</li>
 						</ul>
 					</div>
 
@@ -213,7 +217,7 @@
 					<li><a href="#1" class="active filter" data-filter="all">Все работы</a></li>
 					<li><a href="#1" class="filter" data-filter=".cat-landing">Лендинги</a></li>
 					<li><a href="#1" class="filter" data-filter=".cat-adaptive">Адаптивные</a></li>
-					<li><a href="#1" class="filter" data-filter=".cat-fixed">Фиксированные</a></li>
+					<li><a href="#1" class="filter" data-filter=".cat-test">Тестовые задания</a></li>
 				</ul>
 			</div>
 
@@ -230,18 +234,18 @@
 					</div>
 				</div>
 
-				<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item mix cat-landing">
+				<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item mix cat-adaptive cat-test">
 					<div class="portfolio-item-img">
-						<img src="img/portfolio-images/velox.jpg" alt="velox">
+						<img src="img/portfolio-images/real-estate.png" alt="UP Real Estate">
 					</div>
 					<div class="portfolio-item-descr">
-						<h4>Velox</h4>
-						<p>Animated landing page, adaptive, some bootstrap, jQuery, SCSS</p>
-						<a href="https://antonlitvin.github.io/velox/" target="_blank">Посмотреть</a>
+						<h4>Up Real Estate</h4>
+						<p>Part of responsive page, three color, test task, SCSS, jQuery, bootstrap grig</p>
+						<a href="https://antonlitvin.github.io/up-real-estate/dist/" target="_blank">Open</a>
 					</div>
 				</div>
 
-				<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item mix cat-adaptive">
+				<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item mix cat-adaptive cat-test">
 					<div class="portfolio-item-img">
 						<img src="img/portfolio-images/one_club.jpg" alt="one_club">
 					</div>
@@ -252,14 +256,80 @@
 					</div>
 				</div>
 
-				<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item mix cat-adaptive cat-landing">
+				<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item mix cat-adaptive">
 					<div class="portfolio-item-img">
 						<img src="img/portfolio-images/modus.jpg" alt="modus-versus">
 					</div>
 					<div class="portfolio-item-descr">
 						<h4>Modus-Versus</h4>
 						<p>Three color theme page, adaptive, some bootstrap, jQuery, SCSS</p>
-						<a href="https://antonlitvin.github.io/modus-versus/" target="_blank">Посмотреть</a>
+						<a href="https://antonlitvin.github.io/modus-versus/" target="_blank">Open</a>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item mix cat-adaptive cat-test">
+					<div class="portfolio-item-img">
+						<img src="img/portfolio-images/catsplanet.png" alt="Cat's Planet">
+					</div>
+					<div class="portfolio-item-descr">
+						<h4>Cat's Planet</h4>
+						<p>Responsive page, test task, SCSS, jQuery, Gulp, Bootstrap grid</p>
+						<a href="https://antonlitvin.github.io/cats-planet/dist/" target="_blank">Open</a>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item mix cat-landing">
+					<div class="portfolio-item-img">
+						<img src="img/portfolio-images/velox.jpg" alt="velox">
+					</div>
+					<div class="portfolio-item-descr">
+						<h4>Velox</h4>
+						<p>Animated landing page, adaptive, some bootstrap, jQuery, SCSS</p>
+						<a href="https://antonlitvin.github.io/velox/" target="_blank">Open</a>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item mix cat-adaptive">
+					<div class="portfolio-item-img">
+						<img src="img/portfolio-images/chatty.png" alt="Chatty">
+					</div>
+					<div class="portfolio-item-descr">
+						<h4>Chatty</h4>
+						<p>Responsive Chat, SCSS, jQuery, Gulp</p>
+						<a href="https://antonlitvin.github.io/chatty/app/" target="_blank">Open</a>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item mix cat-landing cat-test">
+					<div class="portfolio-item-img">
+						<img src="img/portfolio-images/mobileapp.png" alt="Mobileapp">
+					</div>
+					<div class="portfolio-item-descr">
+						<h4>Mobileapp</h4>
+						<p>Responsive page, test task, SCSS, jQuery, Gulp, Bootstrap grid</p>
+						<a href="https://antonlitvin.github.io/mobileapp/build/" target="_blank">Open</a>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item mix cat-adaptive">
+					<div class="portfolio-item-img">
+						<img src="img/portfolio-images/mishka.png" alt="Mishka">
+					</div>
+					<div class="portfolio-item-descr">
+						<h4>Mishka</h4>
+						<p>Training responsive page, designed by HTMLAcademy, BEM naming</p>
+						<a href="https://antonlitvin.github.io/mishka/app/" target="_blank">Open</a>
+					</div>
+				</div>
+
+				<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item mix cat-landing">
+					<div class="portfolio-item-img">
+						<img src="img/portfolio-images/sedona.jpg" alt="Sedona">
+					</div>
+					<div class="portfolio-item-descr">
+						<h4>Sedona</h4>
+						<p>Training responsive page, designed by HTMLAcademy. Mobile-first, some native js</p>
+						<a href="https://antonlitvin.github.io/sedona-mobile/" target="_blank">Open</a>
 					</div>
 				</div>
 
@@ -270,18 +340,18 @@
 					<div class="portfolio-item-descr">
 						<h4>Openmint</h4>
 						<p>Adaptive design, native js</p>
-						<a href="https://antonlitvin.github.io/openmint/" target="_blank">Посмотреть</a>
+						<a href="https://antonlitvin.github.io/openmint/" target="_blank">Open</a>
 					</div>
 				</div>
 
-				<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item mix cat-fixed">
+				<div class="col-md-4 col-sm-6 col-xs-12 portfolio-item mix">
 					<div class="portfolio-item-img">
 						<img src="img/portfolio-images/gllacy.jpg" alt="gllacy">
 					</div>
 					<div class="portfolio-item-descr">
 						<h4>Gllacy</h4>
-						<p>Fixed size, native js</p>
-						<a href="https://antonlitvin.github.io/gllacy/" target="_blank">Посмотреть</a>
+						<p>Training fixed size page, designed by HTMLAcademy, native js</p>
+						<a href="https://antonlitvin.github.io/gllacy/" target="_blank">Open</a>
 					</div>
 				</div>
 
