@@ -1,5 +1,9 @@
-* {
+html {
   box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 *::-webkit-input-placeholder {
@@ -53,11 +57,16 @@ button {
 
 img {
   max-width: 100%;
+  height: auto;
 }
 
-section {
+.section {
   padding-top: 30px;
   padding-bottom: 30px;
+}
+
+.static {
+  position: static;
 }
 
 /*===== Preloader =====*/
@@ -443,7 +452,6 @@ section {
 
 .portfolio {
   color: #fff;
-  padding-bottom: 50px;
 }
 
 .portfolio-nav {
@@ -482,14 +490,13 @@ section {
 }
 
 .portfolio-item {
-  padding-top: 5px;
-  padding-bottom: 5px;
   position: relative;
   text-align: center;
   cursor: pointer;
   overflow: hidden;
   display: none;
   /*for mixit up*/
+  margin-bottom: 25px;
 }
 .portfolio-item:hover .portfolio-item-descr {
   opacity: 1;
@@ -498,10 +505,10 @@ section {
 
 .portfolio-item-descr {
   position: absolute;
-  width: 100%;
+  left: 15px;
+  right: 15px;
   height: 0%;
   bottom: 0;
-  left: 0;
   z-index: 5;
   padding-top: 30px;
   padding-left: 15px;
@@ -629,9 +636,11 @@ section {
 .to-top-btn {
   z-index: 1000;
   position: fixed;
+  display: none;
   opacity: 0.4;
   right: 10px;
   bottom: 10px;
+  transition: all 0.25s;
 }
 .to-top-btn:hover {
   opacity: 1;
@@ -643,7 +652,7 @@ section {
 /*==========  Desktop First Method  ==========*/
 /* Large Devices, Wide Screens */
 /* Medium Devices, Desktops */
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 991px) {
   .about-me-right {
     text-align: center;
   }
@@ -653,7 +662,7 @@ section {
   }
 }
 /* Small Devices, Tablets */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 767px) {
   /*Disable Animation on Mobile Devices*/
   .animated {
     /*CSS transitions*/
@@ -742,6 +751,10 @@ section {
   .resume .resume-study-icon {
     padding-right: 0;
     padding-left: 0;
+  }
+
+  .portfolio-item {
+    margin-bottom: 15px;
   }
 
   .contacts {

@@ -6,7 +6,7 @@
 }
 
 /* Medium Devices, Desktops */
-@media only screen and (max-width : 992px) {
+@media only screen and (max-width : 991px) {
 	.about-me-right {
 		text-align: center;
 		.personal-info {
@@ -17,7 +17,7 @@
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 767px) {
 	/*Disable Animation on Mobile Devices*/
 	.animated {
 		/*CSS transitions*/
@@ -113,6 +113,10 @@
 			padding-right: 0;
 			padding-left: 0;
 		}
+	}
+
+	.portfolio-item {
+		margin-bottom: 15px;
 	}
 
 	.contacts {

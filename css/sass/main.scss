@@ -1,5 +1,8 @@
-* {
+html {
 	box-sizing: border-box;
+}
+*, *:before, *:after {
+	box-sizing: inherit;
 }
 
 *::-webkit-input-placeholder {
@@ -53,13 +56,17 @@ button {
 
 img {
 	max-width: 100%;
+	height: auto;
 }
 
-section {
+.section {
 	padding-top: 30px;
 	padding-bottom: 30px;
 }
 
+.static {
+	position: static;
+}
 
 /*===== Preloader =====*/
 
@@ -119,7 +126,8 @@ section {
 		color: #fff;
 		border: 2px solid #fff;
 		border-radius: 3px;
-		font-size: 16px;opacity: 0.7;
+		font-size: 16px;
+		opacity: 0.7;
 		transition: all 0.25s;
 		&:hover {
 			opacity: 0.9;
@@ -472,7 +480,6 @@ section {
 }
 .portfolio {
 	color: #fff;
-	padding-bottom: 50px;
 }
 
 .portfolio-nav {
@@ -511,13 +518,12 @@ section {
 }
 
 .portfolio-item {
-	padding-top: 5px;
-	padding-bottom: 5px;
 	position: relative;
 	text-align: center;
 	cursor: pointer;
 	overflow: hidden;
 	display: none; /*for mixit up*/
+	margin-bottom: 25px;
 	&:hover .portfolio-item-descr {
 		opacity: 1;
 		height: 100%;
@@ -526,10 +532,10 @@ section {
 
 .portfolio-item-descr {
 	position: absolute;
-	width: 100%;
+	left: 15px;
+	right: 15px;
 	height: 0%;
 	bottom:0;
-	left:0;
 	z-index: 5;
 	padding-top: 30px;
 	padding-left: 15px;
@@ -664,9 +670,11 @@ section {
 .to-top-btn {
 	z-index: 1000;
 	position: fixed;
+	display: none;
 	opacity: 0.4;
 	right: 10px;
 	bottom: 10px;
+	transition: all 0.25s;
 	&:hover {
 		opacity: 1;
 	}

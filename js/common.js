@@ -39,7 +39,7 @@ $('.portfolio-item').on('mouseover', function(){
 ===============================*/
 function heightDetect() {
 	$('.main-header').css('height', $(window).height() + 2);
-};
+}
 
 heightDetect();
 
@@ -54,7 +54,7 @@ $('.menu-toggle').on('click', function() {
 	$('.sandwich').toggleClass('active');
 	$('.hidden-menu').fadeToggle();
 	$('.top-menu a').toggleClass('fadeInUp animated');
-})
+});
 
 
 /* Scroll to block
