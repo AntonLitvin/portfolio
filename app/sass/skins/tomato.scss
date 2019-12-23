@@ -1,0 +1,69 @@
+$accent: #FF6347;
+
+
+::selection {
+	background-color: $accent;
+	color: #fff;
+}
+
+.accent-color {
+	color: $accent;
+}
+
+a {
+	color: $accent;
+	&:hover {
+		color: $accent;
+	}
+}
+
+.language-buttons .active {
+	color: $accent;
+	border-color: $accent;
+	opacity: 0.8;
+	&:hover {
+		opacity: 1;
+	}
+}
+
+.hidden-menu a:hover {
+	color: $accent;
+}
+
+.section-header {
+	&::after {
+		background-color: $accent;
+	}
+}
+
+.resume-period {
+	background-color: $accent;
+}
+
+.filter-btn.is-checked {
+	border-bottom: 1px solid $accent;
+	color: #fff;
+}
+
+.portfolio-item-descr a {
+	border: 1px solid $accent;
+}
+
+.contact-icon {
+	.fa {
+		color: $accent;
+	}
+}
+
+.contact-form button {
+	background-color: $accent;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+	box-shadow: 0 0 6px $accent;
+}
+
+.to-top-btn {
+	background-color: $accent;
+}

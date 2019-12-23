@@ -1,0 +1,70 @@
+::-moz-selection {
+  background-color: #FF6347;
+  color: #fff;
+}
+
+::selection {
+  background-color: #FF6347;
+  color: #fff;
+}
+
+.accent-color {
+  color: #FF6347;
+}
+
+a {
+  color: #FF6347;
+}
+
+a:hover {
+  color: #FF6347;
+}
+
+.language-buttons .active {
+  color: #FF6347;
+  border-color: #FF6347;
+  opacity: 0.8;
+}
+
+.language-buttons .active:hover {
+  opacity: 1;
+}
+
+.hidden-menu a:hover {
+  color: #FF6347;
+}
+
+.section-header::after {
+  background-color: #FF6347;
+}
+
+.resume-period {
+  background-color: #FF6347;
+}
+
+.filter-btn.is-checked {
+  border-bottom: 1px solid #FF6347;
+  color: #fff;
+}
+
+.portfolio-item-descr a {
+  border: 1px solid #FF6347;
+}
+
+.contact-icon .fa {
+  color: #FF6347;
+}
+
+.contact-form button {
+  background-color: #FF6347;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  -webkit-box-shadow: 0 0 6px #FF6347;
+          box-shadow: 0 0 6px #FF6347;
+}
+
+.to-top-btn {
+  background-color: #FF6347;
+}
