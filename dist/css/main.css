@@ -118,16 +118,24 @@ button:focus {
   z-index: 9999;
 }
 
-.hero-section {
-  position: relative;
-  padding-top: 30px;
-  background: #000 url(../img/bg-2.jpg) no-repeat left top;
-  -webkit-background-size: cover;
-          background-size: cover;
-  min-height: 100vh;
+.page-header {
+  -webkit-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+  position: fixed;
+  padding: 15px 0;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
 }
 
-.page-header {
+.page-header.scroll {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 5px 0;
+}
+
+.header-inner {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -140,17 +148,15 @@ button:focus {
   -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative;
-  z-index: 2;
 }
 
 .header-logo {
   max-width: 250px;
+  margin-right: 10px;
 }
 
 .language-buttons {
-  margin-left: 15px;
-  margin-right: 160px;
+  margin-left: auto;
 }
 
 .language-buttons a {
@@ -170,10 +176,9 @@ button:focus {
 
 .menu-btn {
   color: #fff;
-  position: fixed;
-  top: 30px;
-  right: 4%;
-  z-index: 100;
+  margin-left: 40px;
+  position: relative;
+  z-index: 20;
 }
 
 .menu-btn p {
@@ -342,6 +347,15 @@ button:focus {
 
 .hidden-menu-list a:hover {
   background-color: rgba(255, 255, 255, 0.1);
+}
+
+.hero-section {
+  position: relative;
+  padding-top: 30px;
+  background: #000 url(../img/bg-2.jpg) no-repeat left top;
+  -webkit-background-size: cover;
+          background-size: cover;
+  min-height: 100vh;
 }
 
 .hero-text {
@@ -842,7 +856,7 @@ button:focus {
 }
 
 .to-top-btn {
-  z-index: 1000;
+  z-index: 50;
   position: fixed;
   opacity: 0.6;
   right: -100px;
@@ -888,14 +902,11 @@ button:focus {
   .section {
     padding: 40px 0;
   }
-  .menu-btn {
-    top: 27px;
-  }
   .header-logo {
     max-width: 200px;
   }
-  .language-buttons {
-    margin-right: 150px;
+  .menu-btn {
+    margin-left: 15px;
   }
   .language-buttons a {
     padding: 3px 7px;
@@ -990,24 +1001,9 @@ button:focus {
   .header-logo {
     max-width: 150px;
   }
-  .page-header {
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-flex-wrap: wrap;
-        -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-  }
-  .language-buttons {
-    margin-right: 0;
-  }
   .language-buttons a {
     padding: 2px 4px;
     font-size: 12px;
-  }
-  .menu-btn {
-    top: 20px;
   }
   .menu-btn p {
     display: none;

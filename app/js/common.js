@@ -26,6 +26,24 @@ new WOW({
 
 
 
+// change header styles on scroll
+function headerScroll() {
+	if($(window).scrollTop() > 100) {
+		$('.page-header').addClass('scroll');
+	} else {
+		$('.page-header').removeClass('scroll');
+	}
+}
+
+headerScroll();
+
+$(window).scroll(function() {
+	headerScroll();
+});
+
+
+
+
 // fix hover in portfolio menu
 
 $('.portfolio-item').on('click', function(){
@@ -66,8 +84,10 @@ menuDelay('.hidden-menu-list li', 100);
 
 $('.hidden-menu a, .arrow-down').on('click', function () {
 
-	var elementClick = $(this).attr("href");
-	var destination = $(elementClick).offset().top;
+	var headerHeight = $('.page-header').outerHeight();
+
+	var elementClick = $(this).attr('href');
+	var destination = $(elementClick).offset().top - 55;
 
 	$('html, body').animate({ scrollTop: destination }, 800);
 	$('.sandwich').removeClass('active');

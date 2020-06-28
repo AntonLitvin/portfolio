@@ -17,14 +17,13 @@
 	.section {
 		padding: 40px 0;
 	}
-	.menu-btn {
-		top: 27px;
-	}
 	.header-logo {
 		max-width: 200px;
 	}
+	.menu-btn {
+		margin-left: 15px;
+	}
 	.language-buttons {
-		margin-right: 150px;
 		a {
 			padding: 3px 7px;
 			font-size: 14px;
@@ -121,19 +120,13 @@
 	.header-logo {
 		max-width: 150px;
 	}
-	.page-header {
-		justify-content: flex-start;
-		flex-wrap: wrap;
-	}
 	.language-buttons {
-		margin-right: 0;
 		a {
 			padding: 2px 4px;
 			font-size: 12px;
 		}
 	}
 	.menu-btn {
-		top: 20px;
 		p {
 			display: none;
 		}

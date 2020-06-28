@@ -108,29 +108,33 @@ button:focus {
 
 // header
 
-.hero-section {
-	position: relative;
-	padding-top: 30px;
-	background: #000 url(../img/bg-2.jpg) no-repeat left top;
-	background-size: cover;
-	min-height: 100vh;
+.page-header {
+	transition: all 0.25s;
+	position: fixed;
+	padding: 15px 0;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 100;
+	&.scroll {
+		background-color: rgba(0,0,0,0.7);
+		padding: 5px 0;
+	}
 }
 
-.page-header {
+.header-inner {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	position: relative;
-	z-index: 2;
 }
 
 .header-logo {
 	max-width: 250px;
+	margin-right: 10px;
 }
 
 .language-buttons {
-	margin-left: 15px;
-	margin-right: 160px;
+	margin-left: auto;
 	a {
 		display: inline-block;
 		padding: 5px 10px;
@@ -149,10 +153,9 @@ button:focus {
 
 .menu-btn {
 	color: #fff;
-	position: fixed;
-	top: 30px;
-	right: 4%;
-	z-index: 100;
+	margin-left: 40px;
+	position: relative;
+	z-index: 20;
 	p {
 		margin: 0;
 		display: inline-block;
@@ -273,7 +276,16 @@ button:focus {
 	}
 }
 
-// hero text
+
+// hero section
+
+.hero-section {
+	position: relative;
+	padding-top: 30px;
+	background: #000 url(../img/bg-2.jpg) no-repeat left top;
+	background-size: cover;
+	min-height: 100vh;
+}
 
 .hero-text {
 	position: absolute;
@@ -685,7 +697,7 @@ button:focus {
 }
 
 .to-top-btn {
-	z-index: 1000;
+	z-index: 50;
 	position: fixed;
 	opacity: 0.6;
 	right: -100px;
