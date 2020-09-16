@@ -282,7 +282,9 @@ button:focus {
 .hero-section {
 	position: relative;
 	padding-top: 30px;
-	background: #000 url(../img/bg-2.jpg) no-repeat left top;
+	background-color: #000;
+	background-repeat: no-repeat;
+	background-position: left top;
 	background-size: cover;
 	min-height: 100vh;
 }
